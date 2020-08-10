@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { RoomConsumer, RoomContext } from './Context';
+import { RoomContext } from './Context';
 import Loading from './Loading';
 import Room from './Room';
 import Title from './Title';
@@ -7,7 +7,7 @@ import Title from './Title';
 export default class FeaturedRooms extends Component {
     static contextType = RoomContext;
     render() {
-        const { featuredRooms, loading, getRoom } = this.context;
+        const { featuredRooms, loading } = this.context;
 
         let rooms = featuredRooms.map((item) => {
             return <Room key={item.id} room={item}></Room>;

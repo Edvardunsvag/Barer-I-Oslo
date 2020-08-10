@@ -19,35 +19,34 @@ export default function RoomFilter({ rooms }) {
         );
     });
 
-    let people = [
-        ...new Set(
-            rooms.map((items) => {
-                return items.capacity;
-            })
-        ),
-    ];
+    // let people = [
+    //     ...new Set(
+    //         rooms.map((items) => {
+    //             return items.capacity;
+    //         })
+    //     ),
+    // ];
 
-    people = people.map((item, index) => {
-        return (
-            <option value={item} key={index}>
-                {item}
-            </option>
-        );
-    });
+    // people = people.map((item, index) => {
+    //     return (
+    //         <option value={item} key={index}>
+    //             {item}
+    //         </option>
+    //     );
+    // });
 
     const context = useContext(RoomContext);
 
     const {
         type,
         handleChange,
-        capacity,
+        // capacity,
         price,
         minPrice,
         maxPrice,
         minSize,
         maxSize,
         shuffleboard,
-        size,
         mat,
     } = context;
 

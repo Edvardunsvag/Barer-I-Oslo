@@ -1,15 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Geocode from 'react-geocode';
-import * as geolib from 'geolib';
-
-const mapStyles = {
-    map: {
-        position: 'absolute',
-        width: '100%',
-        height: '100%',
-    },
-};
+// import ReactDOM from 'react-dom';
+// import Geocode from 'react-geocode';
+// import * as geolib from 'geolib';
 
 export class CurrentLocation extends React.Component {
     constructor(props) {
@@ -31,7 +23,6 @@ export class CurrentLocation extends React.Component {
                         latitude: pos.coords.latitude,
                         longitude: pos.coords.longitude,
                     };
-                    console.log(coords);
                     this.setState({
                         currentLocation: {
                             lat: coords.latitude,
@@ -44,7 +35,6 @@ export class CurrentLocation extends React.Component {
     }
 
     render() {
-        const style = Object.assign({}, mapStyles.map);
         return <div value={this.state}></div>;
     }
 }

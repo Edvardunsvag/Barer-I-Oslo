@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import items from '../data';
-import CurrentLocation from './CurrentLocation';
 
 const RoomContext = React.createContext();
 
@@ -95,14 +94,14 @@ export default class RoomProvider extends Component {
         // <!-- Capacity filter -->
 
         // <!-- Price filter -->
-        this.state.price = parseInt(this.state.price);
+        this.setState({ price: parseInt(this.state.price) });
         tempItems = tempItems.filter((item) => {
             return item.price <= this.state.price;
         });
 
         // <!-- Size filter -->
-        this.state.minSize = parseInt(this.state.minSize);
-        this.state.maxSize = parseInt(this.state.maxSize);
+        this.setState({ minSize: parseInt(this.state.minSize) });
+        this.setState({ maxsize: parseInt(this.state.maxsize) });
 
         tempItems = tempItems.filter((item) => {
             if (isNaN(this.state.minSize) || isNaN(this.state.maxSize)) {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Map, GoogleApiWrapper } from 'google-maps-react';
+import { GoogleApiWrapper } from 'google-maps-react';
 import CurrentLocation from './CurrentLocation';
-import Geocode from 'react-geocode';
+// import Geocode from 'react-geocode';
 
 const mapStyles = {
     width: '100%',
