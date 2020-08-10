@@ -3,6 +3,7 @@ import Hero from '../Components/Hero';
 import Banner from '../Components/Banner';
 import { Link } from 'react-router-dom';
 import RoomContainer from '../Components/RoomContainer';
+import Maps from '../Components/Maps';
 
 export default function Rooms() {
     return (
@@ -14,6 +15,7 @@ export default function Rooms() {
             </Banner>
 
             <RoomContainer></RoomContainer>
+            {/* <Maps></Maps> */}
         </>
     );
 }

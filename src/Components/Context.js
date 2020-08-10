@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import items from '../data';
+import CurrentLocation from './CurrentLocation';
 
 const RoomContext = React.createContext();
 
@@ -70,6 +71,7 @@ export default class RoomProvider extends Component {
     };
 
     handleChange = (event) => {
+        console.log(event.target);
         let value =
             event.target.type === 'checkbox'
                 ? event.target.checked
@@ -112,6 +114,7 @@ export default class RoomProvider extends Component {
             );
         });
 
+        console.log(this.state.shuffleboard);
         // <!-- shuffleboard -->
         if (this.state.shuffleboard) {
             tempItems = tempItems.filter((item) => item.shuffleboard === true);

@@ -49,7 +49,7 @@ export default [
     },
     {
         sys: {
-            id: '1',
+            id: '2',
         },
         fields: {
             name: 'fyrhuset kuba',
@@ -91,7 +91,7 @@ export default [
     },
     {
         sys: {
-            id: '1',
+            id: '3',
         },
         fields: {
             name: 'kulturhuset',
@@ -133,7 +133,7 @@ export default [
     },
     {
         sys: {
-            id: '1',
+            id: '4',
         },
         fields: {
             name: 'lektern',
@@ -153,6 +153,91 @@ export default [
                     fields: {
                         file: {
                             url: mastermind,
+                        },
+                    },
+                },
+                {
+                    fields: {
+                        file: {
+                            url: people,
+                        },
+                    },
+                },
+                {
+                    fields: {
+                        file: {
+                            url: people2,
+                        },
+                    },
+                },
+            ],
+        },
+    },
+
+    {
+        sys: {
+            id: '5',
+        },
+        fields: {
+            name: 'Orlandos',
+            slug: 'Orlandos',
+            type: 'kos',
+            price: 78,
+            size: 20,
+            mat: false,
+            shuffleboard: false,
+            featured: false,
+
+            description:
+                'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+            extras: ['Ekstra greier', 'Ekstra stuff'],
+            images: [
+                {
+                    fields: {
+                        file: {
+                            url: mastermind,
+                        },
+                    },
+                },
+                {
+                    fields: {
+                        file: {
+                            url: people,
+                        },
+                    },
+                },
+                {
+                    fields: {
+                        file: {
+                            url: people2,
+                        },
+                    },
+                },
+            ],
+        },
+    },
+    {
+        sys: {
+            id: '6',
+        },
+        fields: {
+            name: 'festningen resturant',
+            slug: 'festningen-resturant',
+            type: 'kos',
+            price: 89,
+            size: 80,
+            mat: true,
+            shuffleboard: false,
+            featured: false,
+
+            description:
+                'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+            extras: ['Ekstra greier', 'Ekstra stuff'],
+            images: [
+                {
+                    fields: {
+                        file: {
+                            url: fyrhuset,
                         },
                     },
                 },

@@ -36,6 +36,7 @@ export default function RoomFilter({ rooms }) {
     });
 
     const context = useContext(RoomContext);
+
     const {
         type,
         handleChange,
